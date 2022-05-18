@@ -1,0 +1,68 @@
+input {
+  display: block;
+  width: 90%;
+  margin: 32px auto;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 16px;
+  border: none;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(23, 35, 61, 0.3);
+}
+
+.loadingState{
+  border: 16px solid #e5e5e5; /* Light grey */
+  border-top: 16px solid #FF8500; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  animation: rotation 1s infinite;
+}
+
+.deletePopUp{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+  background: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.deletePopUp div{
+  margin-top: 32px;
+  display: flex;
+  align-self: center;
+}
+
+.deletePopUp button{
+  padding: 16px 32px !important;
+  background: #FF8500;
+}
+
+.deletePopUp p{
+  color: #686868;
+  line-height: 25px;
+}
+
+.deletePopUp button+  button{
+  margin-left: 16px;
+}
+
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

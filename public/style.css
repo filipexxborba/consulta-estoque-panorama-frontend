@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Almarai', sans-serif;
+}
+
+.container{
+  max-width: 425px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+body{
+  background: #F8F8F9;
+}
